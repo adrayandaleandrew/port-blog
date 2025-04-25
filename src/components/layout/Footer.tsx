@@ -1,24 +1,27 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const sections = [
     {
-      title: 'Navigation',
+      title: "Navigation",
       links: [
-        { label: 'Home', path: '/' },
-        { label: 'Portfolio', path: '/portfolio' },
-        { label: 'Blog', path: '/blog' },
-        { label: 'Contact', path: '/contact' },
+        { label: "Home", path: "/" },
+        { label: "Portfolio", path: "/portfolio" },
+        { label: "Blog", path: "/blog" },
+        { label: "Contact", path: "/contact" },
       ],
     },
     {
-      title: 'Social',
+      title: "Social",
       links: [
-        { label: 'GitHub', path: 'https://github.com' },
-        { label: 'LinkedIn', path: 'https://linkedin.com' },
-        { label: 'Twitter', path: 'https://twitter.com' },
+        { label: "GitHub", path: "https://github.com/adrayandaleandrew" },
+        {
+          label: "LinkedIn",
+          path: "https://www.linkedin.com/in/dale-andrew-adrayan-851622263/",
+        },
+        { label: "Twitter", path: "https://twitter.com" },
       ],
     },
   ];
@@ -29,9 +32,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-xl font-bold mb-4">Dale Andrew</h3>
             <p className="text-gray-400">
-              Full Stack Developer passionate about creating beautiful and functional web applications.
+              Full Stack Developer creating beautiful and functional web
+              applications.
             </p>
           </div>
 
@@ -42,7 +46,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.label}>
-                    {link.path.startsWith('http') ? (
+                    {link.path.startsWith("http") ? (
                       <a
                         href={link.path}
                         target="_blank"

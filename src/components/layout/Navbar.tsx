@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
@@ -8,10 +8,10 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/portfolio', label: 'Portfolio' },
-    { path: '/blog', label: 'Blog' },
-    { path: '/contact', label: 'Contact' },
+    { path: "/", label: "Home" },
+    { path: "/portfolio", label: "Portfolio" },
+    { path: "/blog", label: "Blog" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-xl font-bold text-blue-600">
-            Your Name
+            Dale Andrew
           </Link>
 
           <div className="hidden md:flex space-x-8">
@@ -29,8 +29,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`${
                   isActive(item.path)
-                    ? 'text-blue-600 border-b-2 border-blue-600'
-                    : 'text-gray-600 hover:text-blue-600'
+                    ? "text-blue-600 border-b-2 border-blue-600"
+                    : "text-gray-600 hover:text-blue-600"
                 } transition-colors duration-200`}
               >
                 {item.label}
@@ -64,8 +64,8 @@ const Navbar = () => {
               to={item.path}
               className={`${
                 isActive(item.path)
-                  ? 'bg-blue-50 text-blue-600'
-                  : 'text-gray-600 hover:bg-gray-50 hover:text-blue-600'
+                  ? "bg-blue-50 text-blue-600"
+                  : "text-gray-600 hover:bg-gray-50 hover:text-blue-600"
               } block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200`}
             >
               {item.label}

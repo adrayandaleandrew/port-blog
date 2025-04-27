@@ -1,25 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 // Layout Components
-import Layout from './components/layout/Layout';
+import Layout from "./components/layout/Layout";
 
 // Page Components
-import Hero from './components/Hero';
-import AboutMe from './components/AboutMe';
-import TechStack from './components/TechStack';
+import Hero from "./components/Hero";
+import AboutMe from "./components/AboutMe";
+import TechStack from "./components/TechStack";
 
 // Portfolio Components
-import ProjectList from './components/portfolio/ProjectList';
+import ProjectList from "./components/portfolio/ProjectList";
 
 // Blog Components
-import BlogList from './components/blog/BlogList';
+import BlogList from "./components/blog/BlogList";
 
 // Admin Components
-import AdminDashboard from './components/admin/AdminDashboard';
+import AdminDashboard from "./components/admin/AdminDashboard";
 
 // Shared Components
-import ContactForm from './components/shared/ContactForm';
+import ContactForm from "./components/shared/ContactForm";
 
 const Home = () => (
   <>
@@ -34,13 +34,13 @@ const Portfolio = () => (
     projects={[
       // Add sample projects here
       {
-        id: '1',
-        title: 'Sample Project',
-        description: 'A sample project description',
-        imageUrl: 'https://via.placeholder.com/400',
-        technologies: ['React', 'TypeScript', 'Tailwind'],
-        demoLink: 'https://example.com',
-        githubLink: 'https://github.com',
+        id: "1",
+        title: "Sample Project",
+        description: "A sample project description",
+        imageUrl: "https://via.placeholder.com/400",
+        technologies: ["React", "TypeScript", "Tailwind"],
+        demoLink: "https://example.com",
+        githubLink: "https://github.com",
       },
     ]}
   />
@@ -51,13 +51,13 @@ const Blog = () => (
     posts={[
       // Add sample blog posts here
       {
-        id: '1',
-        title: 'Sample Blog Post',
-        excerpt: 'This is a sample blog post excerpt...',
-        date: '2025-04-25',
-        author: 'John Doe',
-        category: 'Technology',
-        readTime: '5 min',
+        id: "1",
+        title: "Sample Blog Post",
+        excerpt: "This is a sample blog post excerpt...",
+        date: "2025-04-25",
+        author: "John Doe",
+        category: "Technology",
+        readTime: "5 min",
       },
     ]}
     currentPage={1}

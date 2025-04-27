@@ -1,55 +1,97 @@
-# React + TypeScript + Vite
+# Portfolio Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio and blog website built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Portfolio Showcase**: Display your projects with details and links
+- **Blog Section**: Share your thoughts and experiences
+- **Responsive Design**: Looks great on all devices
+- **Admin Dashboard**: Manage your content
+- **Contact Form**: Allow visitors to get in touch
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 19 with TypeScript
+- **Routing**: React Router v7
+- **Styling**: Tailwind CSS v4
+- **Build Tool**: Vite
+- **Linting**: ESLint
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone -b BranchName https://github.com/yourusername/port-blog.git
+   cd port-blog
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   npm i react-router-dom
+   npm install tailwindcss @tailwindcss/vite
+   ```
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will launch the application at `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Building for Production
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run build
 ```
-# port-blog
+
+The production-ready files will be generated in the `dist` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+- `src/` - Source code
+  - `components/` - React components
+    - `admin/` - Admin dashboard components
+    - `blog/` - Blog-related components
+    - `layout/` - Layout components
+    - `portfolio/` - Portfolio components
+    - `shared/` - Reusable components
+  - `assets/` - Static assets
+  - `App.tsx` - Main application component
+  - `main.tsx` - Entry point
+
+## Customization
+
+- Edit `src/components/AboutMe.tsx` to update your personal information
+- Update `src/components/TechStack.tsx` with your skills
+- Modify the portfolio projects in `src/App.tsx` or connect to a backend API
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

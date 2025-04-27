@@ -35,6 +35,17 @@ const Portfolio = () => (
       // Add sample projects here
       {
         id: "1",
+        title: "E-commerce Website",
+        description: "A sample project description",
+        imageUrl:
+          "https://api.microlink.io/?url=https://adrayan-e-commerce.vercel.app/&screenshot=true&embed=screenshot.url",
+        technologies: ["React", "Tailwind", "Node.js"],
+        demoLink: "https://adrayan-e-commerce.vercel.app/",
+        githubLink: "https://github.com/adrayandaleandrew/e-commerce-website",
+      },
+
+      {
+        id: "2",
         title: "Sample Project",
         description: "A sample project description",
         imageUrl: "https://via.placeholder.com/400",
